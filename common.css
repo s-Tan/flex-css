@@ -1,0 +1,22 @@
+/*多行显示,最后一行超出部分用 ....*/
+.tbc_ov {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    min-height: 20px;
+    max-height: 40px;
+    word-wrap: break-word;
+}
+
+/*修改浏览器最小只支持12px*/
+.classstyle {
+    -webkit-text-size-adjust: none;
+    font-size: 9px;
+}
+
+/*修改input的placeholder的默认颜色*/
+input::-webkit-input-placeholder {
+    color: #999;
+}
